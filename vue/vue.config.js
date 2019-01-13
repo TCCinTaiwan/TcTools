@@ -1,5 +1,6 @@
 // vue.config.js
 module.exports = {
-  baseUrl: '/TcTools/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/TcTools/'
+    : '/'
 }
-
