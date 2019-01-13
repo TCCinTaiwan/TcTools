@@ -1,0 +1,25 @@
+language: node_js
+node_js: node
+
+env:
+  - VUE_DIR: './vue'
+
+before_install:
+  - 'cd ${VUE_DIR}'
+
+install:
+  - 'npm install'
+
+script:
+  - 'npm run build'
+
+# 自動部署到 Gihub Pages
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $TC_TOOLS_GITHUB_TOKEN
+  keep-history: true
+  local-dir: ${VUE_DIR}/dist
+  on:
+    branch: master
+
