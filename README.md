@@ -28,3 +28,7 @@ npm run build
 # 跑網頁，這邊使用 live-server 直接用 npm 安裝即可
 live-server dist\
 ```
+
+## Change Log[↶](#)
+
+當前版本 [更新日誌（Change Log）](CHANGELOG.md)，遵守[語義化版本](https://semver.org/)。
