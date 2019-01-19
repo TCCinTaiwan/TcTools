@@ -1,7 +1,8 @@
 # Changelog
 
-## [Unreleased] - 2019-01-19
+## [0.0.2] - 2019-01-19
 ### Added
+- [Tools] Bash64 Encode/Decode.
 - CHANGLOG.md file.
 
 ### Changed
