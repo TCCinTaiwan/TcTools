@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/md5">MD5 雜湊</router-link>
+      <router-link to="/md5">MD5 雜湊</router-link> |
+      <router-link to="/base64">Base64 編碼／解碼</router-link>
     </div>
     <router-view/>
   </div>
@@ -36,5 +37,15 @@ textarea {
 }
 textarea[readonly] {
   background: rgb(220, 220, 220);
+}
+
+/* 【下拉式選單】樣式 */
+select {
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  min-width: 20px;
+  min-height: 20px;
+  margin: 3px;
 }
 </style>
