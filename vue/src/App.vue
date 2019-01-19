@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/md5">MD5</router-link>
+      <router-link to="/md5">MD5 雜湊</router-link>
     </div>
     <router-view/>
   </div>
@@ -26,5 +24,17 @@
       color: #42b983;
     }
   }
+}
+
+/* 【文本區域】樣式 */
+textarea {
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  min-width: 20px;
+  min-height: 20px;
+}
+textarea[readonly] {
+  background: rgb(220, 220, 220);
 }
 </style>
