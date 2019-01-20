@@ -6,9 +6,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/md5',
-      name: 'md5',
-      component: () => import(/* webpackChunkName: "md5" */ './views/MD5.vue')
+      path: '/hash_tools',
+      name: 'hash_tools',
+      component: () => import(/* webpackChunkName: "hash_tools" */ './views/Hash_Tools.vue')
     },
     {
       path: '/base64',
