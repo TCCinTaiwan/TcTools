@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "md5": "^2.2.1",
+    "node-rsa": "^1.0.2",
     "vue": "^2.5.21",
+    "vue-izitoast": "^1.1.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

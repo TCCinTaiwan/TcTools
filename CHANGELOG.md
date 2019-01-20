@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.4] - 2019-01-20
+### Added
+- use [:octocat:iziToast](https://github.com/dolce/iziToast) to show the notification when copy text.
+
 ## [0.0.3] - 2019-01-20
 ### Changed
 - [Tools] MD5 hash bacome hash tools.

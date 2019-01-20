@@ -5,9 +5,9 @@
       <option v-for="(value, key) in charset_list" :key="key" :value="key">{{ value }}</option>
     </select>
     <textarea type="text" name='source_data' placeholder='（輸入原始資料，編碼成 Base64 字串）' autofocus v-model='source_data'></textarea>
-    <textarea name='output_base64_data' for='source_data' placeholder='［經過 Base64 編碼的字串］' readonly v-text='output_base64_data' @mouseup='copy'></textarea>
+    <textarea name='output_base64_data' title='Base64 編碼字串' for='source_data' placeholder='［經過 Base64 編碼的字串］' readonly v-text='output_base64_data' @mouseup='copy'></textarea>
     <textarea type="text" name='base64_data' placeholder='（輸入 Base64 字串，解碼成原始資料）' v-model='base64_data'></textarea>
-    <textarea name='output_source_data' for='base64_data' placeholder='［經過 Base64 解碼的原始資料］' readonly v-text='output_source_data' @mouseup='copy'></textarea>
+    <textarea name='output_source_data' title='原始資料' for='base64_data' placeholder='［經過 Base64 解碼的原始資料］' readonly v-text='output_source_data' @mouseup='copy'></textarea>
   </div>
 </template>
 
@@ -41,6 +41,7 @@ export default {
   methods: {
     copy: function(event) {
       event.target.$copy() // 複製內容
+      this.$toast.info(event.target.title, '複製', this.$notificationSystem.options.info)
     },
   }
 }
