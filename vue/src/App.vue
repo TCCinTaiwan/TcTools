@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/md5">MD5 雜湊</router-link> |
+      <router-link to="/hash_tools">雜湊</router-link> |
       <router-link to="/base64">Base64 編碼／解碼</router-link>
     </div>
     <router-view/>
@@ -25,6 +25,15 @@
       color: #42b983;
     }
   }
+}
+
+/* 【輸入框】樣式 */
+input {
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  min-width: 20px;
+  min-height: 20px;
 }
 
 /* 【文本區域】樣式 */

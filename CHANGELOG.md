@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.3] - 2019-01-20
+### Changed
+- [Tools] MD5 hash bacome hash tools.
+
 ## [0.0.2] - 2019-01-19
 ### Added
 - [Tools] Bash64 Encode/Decode.
