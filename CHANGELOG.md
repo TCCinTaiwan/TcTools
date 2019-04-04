@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.5] - 2019-04-04
+### Added
+- [Tools] JSON to QueryString converter.
+
 ## [0.0.4] - 2019-01-20
 ### Added
 - use [:octocat:iziToast](https://github.com/dolce/iziToast) to show the notification when copy text.
