@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/hash_tools">雜湊</router-link> |
       <router-link to="/base64">Base64 編碼／解碼</router-link> |
+      <router-link to="/uri_encode">URI 編碼／解碼</router-link> |
       <router-link to="/json_to_query_string">JSON 轉 QueryString</router-link>
     </div>
     <router-view/>

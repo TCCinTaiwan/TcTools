@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6] - 2019-04-05
+### Added
+- [Tools] URI Encode/Decode.
+
+### Changed
+- Update README.md screenshot.
+
 ## [0.0.5] - 2019-04-04
 ### Added
 - [Tools] JSON to QueryString converter.
