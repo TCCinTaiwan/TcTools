@@ -5,7 +5,8 @@
 
 See [Github Pages](https://tccintaiwan.github.io/TcTools/#/).
 
-![截圖-MD5 雜湊](screenshots/md5.png)
+![截圖 - 雜湊](screenshots/Hash.png)
+![截圖 - JSON 轉 QueryString](screenshots/Json2QueryString.png)
 
 ## Installation[↶](#)
 
