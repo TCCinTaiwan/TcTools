@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.7] - 2019-05-22
+### Added
+- [Tools] RSA Encrypt/Decrypt.
+
 ## [0.0.6] - 2019-04-05
 ### Added
 - [Tools] URI Encode/Decode.

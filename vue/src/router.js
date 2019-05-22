@@ -21,6 +21,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "uri_encode" */ './views/UriEncode.vue')
     },
     {
+      path: '/rsa',
+      name: 'rsa',
+      component: () => import(/* webpackChunkName: "rsa" */ './views/RSA.vue')
+    },
+    {
       path: '/json_to_query_string',
       name: 'json_to_query_string',
       component: () => import(/* webpackChunkName: "json_to_query_string" */ './views/Json2QueryString.vue')

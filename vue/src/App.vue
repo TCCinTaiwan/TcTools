@@ -4,6 +4,7 @@
       <router-link to="/hash_tools">雜湊</router-link> |
       <router-link to="/base64">Base64 編碼／解碼</router-link> |
       <router-link to="/uri_encode">URI 編碼／解碼</router-link> |
+      <router-link to="/rsa">RSA 加密／解密</router-link> |
       <router-link to="/json_to_query_string">JSON 轉 QueryString</router-link>
     </div>
     <router-view/>
@@ -52,6 +53,16 @@ textarea[readonly] {
 
 /* 【下拉式選單】樣式 */
 select {
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  min-width: 20px;
+  min-height: 20px;
+  margin: 3px;
+}
+
+/* 【按鈕】樣式 */
+button {
   width: 50%;
   height: 50%;
   max-width: 100%;

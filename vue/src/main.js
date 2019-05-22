@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import iconv from 'iconv-lite';
 import crypto from 'crypto';
+import NodeRSA from 'node-rsa';
 
 Vue.config.productionTip = false
 Vue.config.devtools = true
@@ -128,6 +129,9 @@ Object.defineProperty(Vue.prototype, '$ripemd160_hmac', { value: (message, secre
 // Base64 編碼／解碼
 Object.defineProperty(Vue.prototype, '$base64_encode', { value: function(data, charset) { return new Buffer(iconv.encode(data, charset), 'utf8').toString('base64') } });
 Object.defineProperty(Vue.prototype, '$base64_decode', { value: function(data, charset) { return iconv.decode(new Buffer(data, 'base64'), charset).toString('utf8') } });
+
+// RSA 加密／解密
+Object.defineProperty(Vue.prototype, '$NodeRSA', { value: NodeRSA });
 
 Object.defineProperty(HTMLTextAreaElement.prototype, '$copy', 
   {
