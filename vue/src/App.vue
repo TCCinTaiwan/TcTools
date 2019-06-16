@@ -5,7 +5,8 @@
       <router-link to="/base64">Base64 編碼／解碼</router-link> |
       <router-link to="/uri_encode">URI 編碼／解碼</router-link> |
       <router-link to="/rsa">RSA 加密／解密</router-link> |
-      <router-link to="/json_to_query_string">JSON 轉 QueryString</router-link>
+      <router-link to="/json_to_query_string">JSON 轉 QueryString</router-link> |
+      <router-link to="/chunk_split">切割字串</router-link>
     </div>
     <router-view/>
   </div>

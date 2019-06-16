@@ -30,5 +30,10 @@ export default new Router({
       name: 'json_to_query_string',
       component: () => import(/* webpackChunkName: "json_to_query_string" */ './views/Json2QueryString.vue')
     },
+    {
+      path: '/chunk_split',
+      name: 'chunk_split',
+      component: () => import(/* webpackChunkName: "chunk_split" */ './views/ChunkSplit.vue')
+    },
   ]
 })

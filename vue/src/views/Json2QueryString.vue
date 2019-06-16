@@ -53,7 +53,7 @@ export default {
       var ignore_null_value = this.ignore_null_value;
       var duplicate_key = this.duplicate_key;
       var output_obj = {};
-      
+
       this.query_string.split('&').forEach(function(item) { // 以第一個 = 切開字串
         var split_index = item.search('=');
 

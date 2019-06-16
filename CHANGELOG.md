@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.8] - 2019-06-16
+### Added
+- [Tools] Split lines every N character.
+
+### Changed
+- Remove extra white space at the ending of the line.
+
 ## [0.0.7] - 2019-05-22
 ### Added
 - [Tools] RSA Encrypt/Decrypt.

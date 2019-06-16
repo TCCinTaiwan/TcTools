@@ -133,7 +133,10 @@ Object.defineProperty(Vue.prototype, '$base64_decode', { value: function(data, c
 // RSA 加密／解密
 Object.defineProperty(Vue.prototype, '$NodeRSA', { value: NodeRSA });
 
-Object.defineProperty(HTMLTextAreaElement.prototype, '$copy', 
+// 切割字串
+Object.defineProperty(Vue.prototype, '$chunk_split', { value: function(body, chunklen, end) { /* discuss at: http://locutus.io/php/chunk_split/ */ chunklen = parseInt(chunklen, 10) || 76; end = end || '\r\n'; if (chunklen < 1) { return false; } return body.match(new RegExp('.{0,' + chunklen + '}', 'g')).join(end); } });
+
+Object.defineProperty(HTMLTextAreaElement.prototype, '$copy',
   {
     value: function() {
       this.select();
